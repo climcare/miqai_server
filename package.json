@@ -1,0 +1,17 @@
+{
+  "name": "core-qai-server",
+  "version": "1.0.0",
+  "description": "Official API Server for CORE QAI",
+  "type": "module",
+  "main": "src/server.js",
+  "private": true,
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "author": "Giovane Pelinção",
+  "license": "Proprietary",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.110.7",
+    "dotenv": "^17.4.2"
+  }
+}
