@@ -33,8 +33,7 @@ import http from "http";
 import mapInput from "./mappers/inputMapper.js";
 import SupabaseProvider from "./providers/supabaseProvider.js";
 
-import AnalisarQualidadeAmbiental
-    from "../../new_core_qai/src/engine/analysis.js";
+import AnalisarQualidadeAmbiental from "core-qai";
 
 
 const PORT =
@@ -476,10 +475,7 @@ const server =
              * ========================================================== */
 
             res.writeHead(200, {
-
-                "Content-Type":
-                    "application/json"
-
+                "Content-Type": "application/json; charset=utf-8"
             });
 
 
