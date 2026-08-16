@@ -12,6 +12,7 @@
   "license": "Proprietary",
   "dependencies": {
     "@supabase/supabase-js": "^2.110.7",
+    "core-qai": "file:../miqai_core",
     "dotenv": "^17.4.2"
   }
 }
