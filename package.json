@@ -12,7 +12,7 @@
   "license": "Proprietary",
   "dependencies": {
     "@supabase/supabase-js": "^2.110.7",
-    "core-qai": "file:../miqai_core",
+    "core-qai": "git+https://github.com/climcare/miqai_core.git",
     "dotenv": "^17.4.2"
   }
 }
