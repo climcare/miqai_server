@@ -10,9 +10,9 @@
   },
   "author": "Giovane Pelinção",
   "license": "Proprietary",
-  "dependencies": {
-    "@supabase/supabase-js": "^2.110.7",
-    "core-qai": "file:../miqai_core",
-    "dotenv": "^17.4.2"
-  }
+ "dependencies": {
+  "@supabase/supabase-js": "^2.110.7",
+  "core-qai": "git+https://github.com/climcare/miqai_core.git",
+  "dotenv": "^17.4.2"
+}
 }
