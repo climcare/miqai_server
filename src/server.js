@@ -31,10 +31,10 @@ import "dotenv/config";
 import http from "http";
 
 import mapInput from "./mappers/inputMapper.js";
+import mapOutput from "./mappers/outputMapper.js";
 import SupabaseProvider from "./providers/supabaseProvider.js";
 
-import AnalisarQualidadeAmbiental
-    from "../../new_core_qai/src/engine/analysis.js";
+import AnalisarQualidadeAmbiental from "core-qai";
 
 
 const PORT =
@@ -476,20 +476,24 @@ const server =
              * ========================================================== */
 
             res.writeHead(200, {
-
-                "Content-Type":
-                    "application/json"
-
+                "Content-Type": "application/json; charset=utf-8"
             });
 
 
-            res.end(
-                JSON.stringify(
-                    resultado,
-                    null,
-                    2
-                )
-            );
+            const payload =
+                mapOutput(
+                    device,
+                    reading,
+                    resultado
+                );
+
+                res.end(
+                    JSON.stringify(
+                        payload,
+                        null,
+                        2
+                    )
+                );
 
 
         }
